@@ -1,6 +1,6 @@
 FROM lsucrc/crcbase 
 
-USER root
+USER crcuser
 #download the delft3d package
 RUN mkdir /softwares
 WORKDIR /
