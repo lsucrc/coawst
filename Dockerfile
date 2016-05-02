@@ -5,7 +5,7 @@ RUN mkdir /softwares
 WORKDIR /softwares
 RUN wget http://lsu.ngchc.org/project/crc/models/coawst/netcdf-3.6.3.tar.gz
 RUN tar -zxvf netcdf-3.6.3.tar.gz
-WORKDIR /netcdf-3.6.3
+WORKDIR /softwares/netcdf-3.6.3
 RUN ./configure cc=gcc fc=gfortran --prefix=/softwares/netcdf-3.6.3
 RUN make check
 RUN make install 
