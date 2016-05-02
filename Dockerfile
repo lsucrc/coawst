@@ -1,6 +1,6 @@
 FROM lsucrc/crcbase 
 
-USER crcuser
+USER root
 #download the delft3d package
 WORKDIR /
 RUN wget http://lsu.ngchc.org/project/crc/models/coawst/netcdf-3.6.3.tar.gz
